@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  MyForksFiles\T3inquisitor\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
+  MyForksFiles\T3inquisitor\Controller\BackEndController:
+    public: true
+
+  MyForksFiles\T3inquisitor\Command\CleanCacheCommand:
+    tags:
+      - name: 'console.command'
+        command: 't3i:clean'

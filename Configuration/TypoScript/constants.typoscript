@@ -1,0 +1,15 @@
+
+module.tx_t3inquisitor_t3inquisitor {
+    view {
+        # cat=module.tx_t3inquisitor_t3inquisitor/file; type=string; label=Path to template root (BE)
+        templateRootPath = EXT:t3inquisitor/Resources/Private/Backend/Templates/
+        # cat=module.tx_t3inquisitor_t3inquisitor/file; type=string; label=Path to template partials (BE)
+        partialRootPath = EXT:t3inquisitor/Resources/Private/Backend/Partials/
+        # cat=module.tx_t3inquisitor_t3inquisitor/file; type=string; label=Path to template layouts (BE)
+        layoutRootPath = EXT:t3inquisitor/Resources/Private/Backend/Layouts/
+    }
+    persistence {
+        # cat=module.tx_t3inquisitor_t3inquisitor//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

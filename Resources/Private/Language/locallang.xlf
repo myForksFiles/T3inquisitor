@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:t3inquisitor/Resources/Private/Language/locallang.xlf" date="2022-10-01T16:28:44Z" product-name="t3inquisitor">
+		<header/>
+		<body>
+			<trans-unit id="tx_t3inquisitor_domain_model_log" resname="tx_t3inquisitor_domain_model_log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_t3inquisitor_domain_model_log.data" resname="tx_t3inquisitor_domain_model_log.data">
+				<source>Data</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,15 @@
+
+# Module configuration
+module.tx_t3inquisitor_system_t3inquisitort3inquisitor {
+    persistence {
+        storagePid = {$module.tx_t3inquisitor_t3inquisitor.persistence.storagePid}
+    }
+    view {
+        templateRootPaths.0 = EXT:t3inquisitor/Resources/Private/Backend/Templates/
+        templateRootPaths.1 = {$module.tx_t3inquisitor_t3inquisitor.view.templateRootPath}
+        partialRootPaths.0 = EXT:t3inquisitor/Resources/Private/Backend/Partials/
+        partialRootPaths.1 = {$module.tx_t3inquisitor_t3inquisitor.view.partialRootPath}
+        layoutRootPaths.0 = EXT:t3inquisitor/Resources/Private/Backend/Layouts/
+        layoutRootPaths.1 = {$module.tx_t3inquisitor_t3inquisitor.view.layoutRootPath}
+    }
+}

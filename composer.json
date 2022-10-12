@@ -1,0 +1,78 @@
+{
+	"name": "myforksfiles/t3inquisitor",
+	"type": "typo3-cms-extension",
+	"description": "tests, checker etc, composer req --dev myforksfiles/t3inquisitor:@dev ",
+	"authors": [
+		{
+			"name": "myForksFiles",
+			"role": "Developer"
+		}
+	],
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"typo3/cms-seo": "*",
+		"t3/min": "*",
+		"predis/predis": "*",
+		"nesbot/carbon": "^2.62",
+		"typo3/cms-core": "^10.4"
+	},
+	"require-dev": {
+		"sensiolabs/security-checker": "*",
+		"derhansen/pwd_security_check": "*",
+		"codeception/codeception": "^4.1",
+		"composer-runtime-api": "^2.2",
+		"friendsoftypo3/phpstan-typo3": "^0.9.0",
+		"michielroos/typo3scan": "^1.7",
+		"phpstan/phpstan": "^1.5",
+		"phpunit/phpunit": "^9.5",
+		"phpunit/php-code-coverage": "*",
+		"rector/rector": "^0.12.19",
+		"vimeo/psalm": "^4.22",
+		"oliverklee/phpunit": "^8.5",
+		"typo3/cms-styleguide": "^11.5",
+		"typo3/testing-framework": "^6.8",
+		"icanhazstring/composer-unused": "^0.8.3",
+		"insolita/unused-scanner": "^2.4",
+		"derhansen/pwd_security_check:": "*",
+		"kalessil/production-dependencies-guard": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"MyForksFiles\\T3inquisitor\\": "Classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"MyForksFiles\\T3inquisitor\\Tests\\": "Tests"
+		}
+	},
+	"replace": {
+		"typo3-ter/t3inquisitor": "self.version"
+	},
+	"config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin",
+		"allow-plugins": {
+			"typo3/cms-composer-installers": true,
+			"typo3/class-alias-loader": true
+		}
+	},
+	"scripts": {
+		"post-autoload-dump": [
+			"TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+		]
+	},
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": ".Build/public",
+			"extension-key": "t3inquisitor"
+		},
+		"production-dependencies-guard": [
+			"check-lock-file",
+			"check-description",
+			"check-abandoned",
+			"white-list:myforksfiles/t3inquisitore"
+		]
+	}
+}
