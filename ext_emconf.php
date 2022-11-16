@@ -6,12 +6,12 @@ $EM_CONF[$_EXTKEY] = [
     'category'         => 'module',
     'author'           => 'myForksFiles',
     'author_email'     => 'myForksFiles@github.com',
-    'state'            => 'experimental',
+    'state'            => 'stable',
     'clearCacheOnLoad' => 0,
     'version'          => '0.0.1',
     'constraints'      => [
         'depends'   => [
-            'typo3' => '10.4.0-11.4.99',
+            'typo3' => '10.4.0-11.5.99',
         ],
         'conflicts' => [],
         'suggests'  => [],

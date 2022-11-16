@@ -14,26 +14,33 @@
 		"t3/min": "*",
 		"predis/predis": "*",
 		"nesbot/carbon": "^2.62",
-		"typo3/cms-core": "^10.4"
-	},
+		"typo3/cms-core": "^10.4 || ^11.0"
+    },
 	"require-dev": {
-		"sensiolabs/security-checker": "*",
-		"derhansen/pwd_security_check": "*",
 		"codeception/codeception": "^4.1",
 		"composer-runtime-api": "^2.2",
+		"derhansen/pwd_security_check:": "*",
+		"filp/whoops": "^2.0",
 		"friendsoftypo3/phpstan-typo3": "^0.9.0",
-		"michielroos/typo3scan": "^1.7",
-		"phpstan/phpstan": "^1.5",
-		"phpunit/phpunit": "^9.5",
-		"phpunit/php-code-coverage": "*",
-		"rector/rector": "^0.12.19",
-		"vimeo/psalm": "^4.22",
-		"oliverklee/phpunit": "^8.5",
-		"typo3/cms-styleguide": "^11.5",
-		"typo3/testing-framework": "^6.8",
+		"fzaninotto/faker": "^1.4",
 		"icanhazstring/composer-unused": "^0.8.3",
 		"insolita/unused-scanner": "^2.4",
-		"derhansen/pwd_security_check:": "*",
+		"mockery/mockery": "^1.7",
+		"nunomaduro/collision": "^5.10",
+		"oliverklee/phpunit": "^8.5",
+		"phan/phan": "^5.4",
+		"pheromone/phpcs-security-audit": "^2.0",
+		"phpcompatibility/php-compatibility": "^9.3",
+		"phpstan/phpstan": "^1.8",
+		"phpunit/php-code-coverage": "*",
+		"phpunit/phpunit": "^9.5",
+		"rector/rector": "^0.12.19",
+		"sensiolabs/security-checker": "*",
+		"squizlabs/php_codesniffer": "*",
+		"typo3/cms-styleguide": "^11.5",
+		"typo3/testing-framework": "^6.8",
+		"michielroos/typo3scan": "^1.7",
+		"vimeo/psalm": "^4.22",
 		"kalessil/production-dependencies-guard": "dev-master"
 	},
 	"autoload": {
@@ -72,7 +79,7 @@
 			"check-lock-file",
 			"check-description",
 			"check-abandoned",
-			"white-list:myforksfiles/t3inquisitore"
+			"white-list:myforksfiles/t3inquisitor"
 		]
 	}
 }
